@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagrik Mitra — Civic Services Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="desk">
+
+  <header class="desk__header">
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 64 64" width="40" height="40">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="1"/>
+        <path d="M32 14 L36 26 L49 26 L38 34 L42 47 L32 39 L22 47 L26 34 L15 26 L28 26 Z" fill="currentColor" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="desk__title">
+      <h1>Nagrik Mitra</h1>
+      <p>Civic Services Desk — ask about documents, bills &amp; complaints</p>
+    </div>
+    <div class="desk__status">
+      <span class="dot" aria-hidden="true"></span> desk open
+    </div>
+  </header>
+
+  <!-- <div class="notice">
+    Try: <em>"how to apply for passport"</em>, <em>"streetlight not working"</em>, <em>"pay my electricity bill"</em>
+  </div> -->
+
+  <main class="counter" id="counter" aria-live="polite">
+    <div class="msg msg--bot">
+      <div class="stamp stamp--verified" aria-hidden="true">
+        <span class="stamp__label">desk</span>
+      </div>
+      <div class="msg__bubble">
+        <p>Namaste! I'm Nagrik Mitra. Ask me about passports, IDs, certificates, bills, complaints, or emergency contacts.</p>
+      </div>
+    </div>
+  </main>
+
+  <form class="ticket" id="ticket-form" autocomplete="off">
+    <input
+      type="text"
+      id="ticket-input"
+      class="ticket__input"
+      placeholder="Type your query…"
+      aria-label="Type your civic query"
+      required
+    >
+    <button type="submit" class="ticket__submit" id="ticket-submit">
+      Submit query
+    </button>
+  </form>
+
+</div>
+
+<template id="bot-msg-template">
+  <div class="msg msg--bot">
+    <div class="stamp" aria-hidden="true">
+      <span class="stamp__label"></span>
+      <span class="stamp__meta"></span>
+    </div>
+    <div class="msg__bubble">
+      <p></p>
+    </div>
+  </div>
+</template>
+
+<template id="user-msg-template">
+  <div class="msg msg--user">
+    <div class="msg__bubble">
+      <p></p>
+    </div>
+  </div>
+</template>
+
+<template id="typing-template">
+  <div class="msg msg--bot msg--typing" id="typing-indicator">
+    <div class="stamp stamp--pending" aria-hidden="true">
+      <span class="stamp__label">…</span>
+    </div>
+    <div class="msg__bubble msg__bubble--typing">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</template>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

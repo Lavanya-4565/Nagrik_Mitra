@@ -1,0 +1,935 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hey",
+                "Hii",
+                "Hi",
+                "Hello",
+                "Hola",
+                "Namaste",
+                "Suno",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Is anyone there",
+                "Hey there",
+                "Hiya",
+                "Yo",
+                "Salaam",
+                "Greetings",
+                "What's up",
+                "Hello bot",
+                "Hi there",
+                "Can you help me"
+            ],
+            "responses": [
+                "Namaste! How can I help you today?",
+                "Hello! How can I help you with government services today?",
+                "Hi, I'm your civic assistant. What do you need help with?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Exit",
+                "Quit",
+                "That's all",
+                "Thanks bye",
+                "I'm done",
+                "Close chat",
+                "End conversation",
+                "Talk later"
+            ],
+            "responses": [
+                "Goodbye! Have a nice day.",
+                "Bye! Feel free to come back if you need anything else.",
+                "Take care!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thanks a lot",
+                "Appreciate it",
+                "That helped",
+                "Thank you so much",
+                "Great, thanks",
+                "Nice, thank you",
+                "Cool thanks"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Glad I could help!",
+                "Anytime!"
+            ]
+        },
+        {
+            "tag": "bot_identity",
+            "patterns": [
+                "Who are you",
+                "What are you",
+                "Are you a robot",
+                "What is your name",
+                "Are you human",
+                "What can you do",
+                "Tell me about yourself",
+                "What is this chatbot for",
+                "Who made you"
+            ],
+            "responses": [
+                "I'm a civic services chatbot that helps you with government-related queries like documents, bills, and complaints.",
+                "I'm an assistant built to help citizens navigate government services."
+            ]
+        },
+        {
+            "tag": "passport",
+            "patterns": [
+                "How to apply for passport",
+                "Need passport",
+                "Passport application",
+                "Apply passport online",
+                "I want a passport",
+                "Passport renewal",
+                "New passport",
+                "Passport process",
+                "How can I get a passport",
+                "Where do I apply for a passport",
+                "Passport fees",
+                "Documents needed for passport",
+                "Passport appointment booking",
+                "How long does passport take",
+                "Lost my passport what to do",
+                "Passport office near me",
+                "Tatkal passport process"
+            ],
+            "responses": [
+                "Visit the Passport Seva Portal (passportindia.gov.in) to apply or renew your passport."
+            ]
+        },
+        {
+            "tag": "voter_id",
+            "patterns": [
+                "How to apply for voter card",
+                "Need voter ID",
+                "Voter ID registration",
+                "How to register to vote",
+                "Voter ID correction",
+                "Lost voter ID card",
+                "Check voter ID status",
+                "Voter list search",
+                "Apply for EPIC card",
+                "How to update address in voter ID",
+                "Voter helpline number",
+                "Eligibility to vote",
+                "Voter ID download online"
+            ],
+            "responses": [
+                "Apply through Form 6 on the National Voter Services Portal (nvsp.in).",
+                "You can apply for or correct your Voter ID online at voters.eci.gov.in."
+            ]
+        },
+        {
+            "tag": "aadhaar_card",
+            "patterns": [
+                "How to apply for aadhaar card",
+                "Need Aadhaar ID",
+                "How to update information in Aadhaar card",
+                "Aadhaar enrollment",
+                "Lost my Aadhaar card",
+                "Download Aadhaar card online",
+                "Link mobile number to Aadhaar",
+                "Aadhaar card correction",
+                "Check Aadhaar card status",
+                "Nearest Aadhaar enrollment center",
+                "Aadhaar card for newborn",
+                "Aadhaar PVC card apply"
+            ],
+            "responses": [
+                "Visit uidai.gov.in or your nearest Aadhaar Seva Kendra to apply or update your Aadhaar card."
+            ]
+        },
+        {
+            "tag": "pan_card",
+            "patterns": [
+                "How to apply for PAN card",
+                "Need PAN card",
+                "PAN card correction",
+                "Lost my PAN card",
+                "Link PAN with Aadhaar",
+                "PAN card status check",
+                "Download e-PAN card",
+                "PAN card for minor",
+                "PAN card fees",
+                "Reprint PAN card",
+                "PAN card documents required"
+            ],
+            "responses": [
+                "You can apply for a PAN card online through the NSDL or UTIITSL portal."
+            ]
+        },
+        {
+            "tag": "driving_license",
+            "patterns": [
+                "How to apply for driving license",
+                "Need learner's license",
+                "Driving license renewal",
+                "Driving license test booking",
+                "Lost my driving license",
+                "International driving permit",
+                "Duplicate driving license",
+                "Driving license status check",
+                "Change address in driving license",
+                "RTO office for license"
+            ],
+            "responses": [
+                "Apply for or renew your driving license through the Parivahan Sewa portal (parivahan.gov.in)."
+            ]
+        },
+        {
+            "tag": "vehicle_registration",
+            "patterns": [
+                "How to register a new vehicle",
+                "Vehicle RC transfer",
+                "Vehicle registration renewal",
+                "Change vehicle ownership",
+                "Lost RC book what to do",
+                "NOC for vehicle transfer",
+                "Vehicle fitness certificate",
+                "Vehicle registration status check"
+            ],
+            "responses": [
+                "Vehicle registration and RC services are available on the Parivahan Sewa portal (parivahan.gov.in)."
+            ]
+        },
+        {
+            "tag": "ration_card",
+            "patterns": [
+                "How to apply for ration card",
+                "Need ration card",
+                "Ration card correction",
+                "Add family member to ration card",
+                "Lost ration card",
+                "Ration card status check",
+                "Download ration card online",
+                "Transfer ration card to new address",
+                "Types of ration card"
+            ],
+            "responses": [
+                "You can apply for a ration card through your state's Food and Civil Supplies Department portal."
+            ]
+        },
+        {
+            "tag": "income_certificate",
+            "patterns": [
+                "How to apply for income certificate",
+                "Need income certificate",
+                "Income certificate for scholarship",
+                "Income certificate status check",
+                "Documents for income certificate",
+                "Renew income certificate"
+            ],
+            "responses": [
+                "Apply for an income certificate through your state's e-District or Seva Kendra portal."
+            ]
+        },
+        {
+            "tag": "caste_certificate",
+            "patterns": [
+                "How to apply for caste certificate",
+                "Need caste certificate",
+                "Caste certificate documents required",
+                "Caste certificate status check",
+                "OBC certificate apply",
+                "SC ST certificate apply"
+            ],
+            "responses": [
+                "Apply for a caste certificate through your state's e-District portal or local Tehsil office."
+            ]
+        },
+        {
+            "tag": "domicile_certificate",
+            "patterns": [
+                "How to apply for domicile certificate",
+                "Need residence certificate",
+                "Domicile certificate documents required",
+                "Domicile certificate status"
+            ],
+            "responses": [
+                "Apply for a domicile/residence certificate through your state's e-District portal."
+            ]
+        },
+        {
+            "tag": "birth_certificate",
+            "patterns": [
+                "How to apply for birth certificate",
+                "Need birth certificate",
+                "Birth certificate correction",
+                "Birth certificate for newborn",
+                "Download birth certificate online",
+                "Birth certificate status check",
+                "Late registration of birth certificate"
+            ],
+            "responses": [
+                "Apply for a birth certificate through the Civil Registration System portal (crsorgi.gov.in) or your municipal office."
+            ]
+        },
+        {
+            "tag": "death_certificate",
+            "patterns": [
+                "How to apply for death certificate",
+                "Need death certificate",
+                "Death certificate correction",
+                "Download death certificate online",
+                "Death certificate status check"
+            ],
+            "responses": [
+                "Apply for a death certificate through the Civil Registration System portal (crsorgi.gov.in) or your municipal office."
+            ]
+        },
+        {
+            "tag": "marriage_certificate",
+            "patterns": [
+                "How to apply for marriage certificate",
+                "Need marriage certificate",
+                "Register marriage online",
+                "Marriage certificate documents required",
+                "Marriage certificate status check"
+            ],
+            "responses": [
+                "Register your marriage and apply for a certificate through your state's marriage registration portal."
+            ]
+        },
+        {
+            "tag": "water_problem",
+            "patterns": [
+                "Lack of water in locality",
+                "Need water tank",
+                "Water pipe damage",
+                "No water supply today",
+                "Water supply timing complaint",
+                "Dirty water supply complaint",
+                "Low water pressure complaint",
+                "Water tanker request",
+                "Water leakage complaint"
+            ],
+            "responses": [
+                "You can file an online complaint at your local Seva Kendra or municipal corporation portal for water issues."
+            ]
+        },
+        {
+            "tag": "get_government_scheme_info",
+            "patterns": [
+                "Tell me about the PM Kisan scheme",
+                "What is Ayushman Bharat",
+                "Eligibility for Ujjwala Yojana",
+                "How to apply for Pradhan Mantri Awas Yojana",
+                "Give details of government pension scheme",
+                "List all schemes for farmers",
+                "Benefits of Digital India program",
+                "Government schemes for women entrepreneurs",
+                "Scholarship schemes for students",
+                "Schemes for senior citizens",
+                "Startup India scheme details",
+                "Skill India scheme information",
+                "Beti Bachao Beti Padhao scheme"
+            ],
+            "responses": [
+                "You can find detailed information on government schemes at myscheme.gov.in.",
+                "Please share which scheme you're interested in and I can guide you to the right portal."
+            ]
+        },
+        {
+            "tag": "document_application_status",
+            "patterns": [
+                "Track my Aadhaar card status",
+                "Check PAN card application",
+                "Passport renewal status",
+                "Track my birth certificate application",
+                "Check my ration card application status",
+                "Track driving license application",
+                "Voter ID application status",
+                "Check my caste certificate status"
+            ],
+            "responses": [
+                "Please share your application/reference number and the document type, and I'll help you find where to track it."
+            ]
+        },
+        {
+            "tag": "register_civic_complaint",
+            "patterns": [
+                "Report a pothole in my area",
+                "Garbage not collected for 3 days",
+                "Streetlight not working",
+                "Water supply issue in my locality",
+                "Sewage overflow complaint",
+                "Broken footpath near my house",
+                "Noise complaint against a shop",
+                "Illegal construction in my neighborhood",
+                "Stray animal complaint",
+                "Tree fallen on road complaint",
+                "Public toilet not clean complaint",
+                "Encroachment complaint"
+            ],
+            "responses": [
+                "You can register your complaint on your local municipal corporation's grievance portal, or dial the civic helpline."
+            ]
+        },
+        {
+            "tag": "local_office_contact_info",
+            "patterns": [
+                "Where is the nearest municipal office",
+                "Contact number of my ward councillor",
+                "Office hours of local panchayat",
+                "Who is the MLA of my area",
+                "Nearest RTO office location",
+                "Where can I find the district collector's office",
+                "Municipal office email address",
+                "Ward office timings",
+                "Nearest post office location",
+                "Tehsil office contact details"
+            ],
+            "responses": [
+                "Please share your area/city name and the type of office you're looking for, and I'll point you to the right contact."
+            ]
+        },
+        {
+            "tag": "pay_tax_or_bill",
+            "patterns": [
+                "Pay my property tax online",
+                "How to check my electricity bill",
+                "Water bill payment portal",
+                "Property tax due date",
+                "Electricity bill complaint",
+                "Where to pay my water bill",
+                "Check my gas bill",
+                "Online payment for property tax",
+                "House tax payment online",
+                "Pay traffic challan online"
+            ],
+            "responses": [
+                "Most municipal bills (property tax, water, electricity) can be paid online through your city's municipal corporation website or the UMANG app."
+            ]
+        },
+        {
+            "tag": "emergency_contact_info",
+            "patterns": [
+                "Emergency number for ambulance",
+                "Fire station contact near me",
+                "Police helpline number",
+                "Disaster management helpline",
+                "Nearest hospital emergency contact",
+                "Women helpline number",
+                "Child helpline contact",
+                "Flood relief helpline",
+                "National emergency number",
+                "Cyber crime helpline number"
+            ],
+            "responses": [
+                "Police: 100, Ambulance: 102/108, Fire: 101, Women Helpline: 1091, Child Helpline: 1098, National Emergency Number: 112."
+            ]
+        },
+        {
+            "tag": "rti_request",
+            "patterns": [
+                "How to file an RTI",
+                "Right to information application",
+                "RTI status check",
+                "RTI fees",
+                "Documents needed for RTI application"
+            ],
+            "responses": [
+                "You can file an RTI application online at rtionline.gov.in."
+            ]
+        },
+        {
+            "tag": "grievance_status",
+            "patterns": [
+                "Check my grievance status",
+                "CPGRAMS complaint status",
+                "How to file a public grievance",
+                "Track my complaint online"
+            ],
+            "responses": [
+                "You can file and track public grievances at pgportal.gov.in (CPGRAMS)."
+            ]
+        },
+        {
+            "tag": "school_admission",
+            "patterns": [
+                "How to apply for school admission",
+                "Government school admission process",
+                "RTE admission online",
+                "School admission documents required",
+                "Scholarship for school students"
+            ],
+            "responses": [
+                "School admission information, including RTE quota applications, is available on your state education department's portal."
+            ]
+        },
+        {
+            "tag": "gas_connection",
+            "patterns": [
+                "How to apply for LPG gas connection",
+                "New gas connection process",
+                "Transfer gas connection to new address",
+                "Gas subsidy status check",
+                "Book LPG cylinder online",
+                "Gas connection surrender",
+                "Complaint about gas delivery",
+                "Documents needed for gas connection"
+            ],
+            "responses": [
+                "You can apply for a new LPG connection or check subsidy status on the mylpg.in portal, or your provider's app."
+            ]
+        },
+        {
+            "tag": "electricity_new_connection",
+            "patterns": [
+                "How to apply for new electricity connection",
+                "Electricity meter installation",
+                "Load enhancement application",
+                "Electricity connection transfer",
+                "Documents for new electricity connection",
+                "Meter reading complaint",
+                "Faulty electricity meter complaint"
+            ],
+            "responses": [
+                "Apply for a new electricity connection through your state electricity board's website or the UMANG app."
+            ]
+        },
+        {
+            "tag": "pension_scheme",
+            "patterns": [
+                "How to apply for old age pension",
+                "Widow pension application",
+                "Disability pension apply",
+                "Pension status check",
+                "Documents required for pension scheme",
+                "EPF pension withdrawal process"
+            ],
+            "responses": [
+                "Pension scheme applications can be filed through your state's social welfare department portal or e-District portal."
+            ]
+        },
+        {
+            "tag": "health_insurance",
+            "patterns": [
+                "How to apply for Ayushman Bharat card",
+                "Check Ayushman Bharat eligibility",
+                "Health insurance card download",
+                "Hospital list under Ayushman Bharat",
+                "Apply for state health scheme"
+            ],
+            "responses": [
+                "You can check eligibility and apply for Ayushman Bharat (PM-JAY) at pmjay.gov.in."
+            ]
+        },
+        {
+            "tag": "employment_exchange",
+            "patterns": [
+                "How to register in employment exchange",
+                "Job seeker registration online",
+                "Government job vacancy list",
+                "Skill India registration",
+                "Unemployment allowance apply",
+                "Employment exchange renewal"
+            ],
+            "responses": [
+                "Register on your state's Employment Exchange portal or the National Career Service portal (ncs.gov.in)."
+            ]
+        },
+        {
+            "tag": "scholarship",
+            "patterns": [
+                "How to apply for scholarship",
+                "National scholarship portal registration",
+                "Scholarship status check",
+                "Documents needed for scholarship application",
+                "Post matric scholarship eligibility",
+                "Minority scholarship apply"
+            ],
+            "responses": [
+                "Apply for government scholarships through the National Scholarship Portal (scholarships.gov.in)."
+            ]
+        },
+        {
+            "tag": "senior_citizen_services",
+            "patterns": [
+                "Senior citizen ID card apply",
+                "Benefits for senior citizens",
+                "Senior citizen bus pass application",
+                "Old age home information",
+                "Senior citizen helpline number"
+            ],
+            "responses": [
+                "Senior citizen ID cards and benefits can be applied for through your state's social welfare department."
+            ]
+        },
+        {
+            "tag": "disability_certificate",
+            "patterns": [
+                "How to apply for disability certificate",
+                "UDID card apply",
+                "Disability certificate documents required",
+                "Disability pension apply",
+                "Disability certificate status check"
+            ],
+            "responses": [
+                "Apply for a disability certificate (UDID card) at swavlambancard.gov.in."
+            ]
+        },
+        {
+            "tag": "land_records",
+            "patterns": [
+                "How to check land records",
+                "Land ownership certificate",
+                "Mutation of property online",
+                "Land survey record",
+                "7/12 extract online",
+                "Property registration process",
+                "Encumbrance certificate apply"
+            ],
+            "responses": [
+                "Land records, mutation, and property registration services are available on your state's land records portal (e.g. Bhulekh, Bhoomi)."
+            ]
+        },
+        {
+            "tag": "traffic_challan",
+            "patterns": [
+                "Check my traffic challan",
+                "Pay traffic fine online",
+                "Traffic challan status",
+                "Contest a traffic challan",
+                "Download challan receipt"
+            ],
+            "responses": [
+                "Check and pay traffic challans online at echallan.parivahan.gov.in."
+            ]
+        },
+        {
+            "tag": "income_tax_filing",
+            "patterns": [
+                "How to file income tax return",
+                "ITR filing last date",
+                "Income tax refund status",
+                "Link PAN with bank account for tax",
+                "Income tax portal login issue"
+            ],
+            "responses": [
+                "File your income tax return and check refund status at the Income Tax e-Filing portal (incometax.gov.in)."
+            ]
+        },
+        {
+            "tag": "consumer_complaint",
+            "patterns": [
+                "How to file a consumer complaint",
+                "Product quality complaint",
+                "Online shopping fraud complaint",
+                "Consumer forum complaint process",
+                "Refund not received complaint"
+            ],
+            "responses": [
+                "File consumer complaints online at the National Consumer Helpline portal (consumerhelpline.gov.in) or call 1915."
+            ]
+        },
+        {
+            "tag": "cyber_crime_complaint",
+            "patterns": [
+                "How to report cyber crime",
+                "Online fraud complaint",
+                "Report hacked account",
+                "Report phishing scam",
+                "Cyber crime helpline"
+            ],
+            "responses": [
+                "Report cyber crimes at cybercrime.gov.in or call the national cyber crime helpline 1930."
+            ]
+        },
+        {
+            "tag": "fallback_smalltalk",
+            "patterns": [
+                "How are you",
+                "What's the weather like",
+                "Tell me a joke",
+                "Are you real",
+                "Do you sleep",
+                "What is your favorite color"
+            ],
+            "responses": [
+                "I'm here to help with government and civic queries — ask me about documents, bills, or complaints!"
+            ]
+        },
+        {
+            "tag": "passport_police_verification",
+            "patterns": [
+                "Passport police verification status",
+                "How long does police verification take",
+                "Police verification not done for passport",
+                "Passport verification process"
+            ],
+            "responses": [
+                "Passport police verification status can be tracked on the Passport Seva Portal or by contacting your local police station."
+            ]
+        },
+        {
+            "tag": "pf_provident_fund",
+            "patterns": [
+                "How to check PF balance",
+                "EPF withdrawal online",
+                "PF transfer to new employer",
+                "UAN activation process",
+                "PF claim status check",
+                "Link Aadhaar with UAN"
+            ],
+            "responses": [
+                "Check your PF balance and file claims through the EPFO member portal (epfindia.gov.in) or the UMANG app."
+            ]
+        },
+        {
+            "tag": "bank_account_kyc",
+            "patterns": [
+                "How to update KYC in bank account",
+                "Bank account opening documents required",
+                "Link Aadhaar with bank account",
+                "Bank KYC update online",
+                "Jan Dhan account open online"
+            ],
+            "responses": [
+                "KYC updates and Jan Dhan account opening can be done at your nearest bank branch or through your bank's app."
+            ]
+        },
+        {
+            "tag": "passport_lost_stolen",
+            "patterns": [
+                "My passport is lost what should I do",
+                "Stolen passport complaint process",
+                "Report lost passport",
+                "Reissue passport after loss"
+            ],
+            "responses": [
+                "File a police complaint for the lost passport first, then apply for reissue on the Passport Seva Portal."
+            ]
+        },
+        {
+            "tag": "municipal_property_tax_dispute",
+            "patterns": [
+                "Dispute my property tax assessment",
+                "Property tax overcharge complaint",
+                "How to appeal property tax",
+                "Property tax reassessment request"
+            ],
+            "responses": [
+                "You can file a property tax dispute or reassessment request at your municipal corporation's revenue office."
+            ]
+        },
+        {
+            "tag": "garbage_collection_schedule",
+            "patterns": [
+                "What time does garbage collection happen",
+                "Garbage collection schedule for my area",
+                "Request extra garbage pickup",
+                "Bulk waste disposal request",
+                "Recycling pickup schedule"
+            ],
+            "responses": [
+                "Garbage collection schedules are set by your local municipal corporation — check their website or app for your ward's timing."
+            ]
+        },
+        {
+            "tag": "street_repair",
+            "patterns": [
+                "Road repair complaint",
+                "Damaged road near my house",
+                "Request road resurfacing",
+                "Speed breaker request",
+                "Road construction complaint"
+            ],
+            "responses": [
+                "Report road/street repair needs through your municipal corporation's grievance portal."
+            ]
+        },
+        {
+            "tag": "public_transport_info",
+            "patterns": [
+                "Bus route information",
+                "Metro timing near me",
+                "Public bus pass apply",
+                "Local train schedule",
+                "Bus fare information",
+                "Metro card recharge"
+            ],
+            "responses": [
+                "For bus/metro routes and passes, check your city transport corporation's website or app."
+            ]
+        },
+        {
+            "tag": "noc_certificate",
+            "patterns": [
+                "How to get NOC from police station",
+                "NOC for passport",
+                "NOC for construction",
+                "No objection certificate apply",
+                "NOC for vehicle sale"
+            ],
+            "responses": [
+                "NOCs vary by purpose — please specify what the NOC is for (passport, construction, vehicle) and I can point you to the right office."
+            ]
+        },
+        {
+            "tag": "legal_aid",
+            "patterns": [
+                "Free legal aid services",
+                "How to get a free lawyer",
+                "Legal aid for poor citizens",
+                "District legal services authority contact"
+            ],
+            "responses": [
+                "Free legal aid is available through your District Legal Services Authority (DLSA) or the National Legal Services Authority (nalsa.gov.in)."
+            ]
+        },
+        {
+            "tag": "women_safety_services",
+            "patterns": [
+                "Women safety helpline",
+                "How to file domestic violence complaint",
+                "One stop centre for women contact",
+                "Women police station near me",
+                "Report harassment against women"
+            ],
+            "responses": [
+                "Women's helpline: 1091. You can also contact your nearest One Stop Centre or Women's Police Station for support."
+            ]
+        },
+        {
+            "tag": "child_welfare_services",
+            "patterns": [
+                "Report child labour",
+                "Child helpline number",
+                "Missing child complaint",
+                "Child adoption process",
+                "CWC contact details"
+            ],
+            "responses": [
+                "Child Helpline: 1098. For adoption, visit cara.nic.in; for missing children, contact your local police station."
+            ]
+        },
+        {
+            "tag": "animal_control",
+            "patterns": [
+                "Stray dog complaint",
+                "Animal cruelty complaint",
+                "Cattle on road complaint",
+                "Request animal birth control program",
+                "Report injured animal"
+            ],
+            "responses": [
+                "Report stray animal or cruelty issues to your municipal corporation's animal control cell or local SPCA."
+            ]
+        },
+        {
+            "tag": "power_outage",
+            "patterns": [
+                "Power cut in my area",
+                "No electricity since morning",
+                "Report power outage",
+                "Scheduled power maintenance information",
+                "Transformer not working complaint"
+            ],
+            "responses": [
+                "Report power outages to your electricity board's helpline or app — most boards also post scheduled maintenance notices online."
+            ]
+        },
+        {
+            "tag": "internet_broadband_complaint",
+            "patterns": [
+                "Internet not working complaint",
+                "Broadband connection request",
+                "BSNL connection apply",
+                "Internet speed complaint",
+                "Telecom service complaint"
+            ],
+            "responses": [
+                "For broadband/telecom complaints, contact your service provider's helpline or file a complaint with TRAI (trai.gov.in)."
+            ]
+        },
+        {
+            "tag": "covid_vaccination",
+            "patterns": [
+                "How to book vaccine slot",
+                "COVID vaccination certificate download",
+                "Vaccination centre near me",
+                "COVID test booking"
+            ],
+            "responses": [
+                "Book vaccination slots and download certificates via the CoWIN portal (cowin.gov.in)."
+            ]
+        },
+        {
+            "tag": "food_safety_complaint",
+            "patterns": [
+                "Report food adulteration",
+                "Restaurant hygiene complaint",
+                "FSSAI license apply",
+                "Food safety complaint online"
+            ],
+            "responses": [
+                "File food safety complaints with FSSAI at foscos.fssai.gov.in, or your local municipal health department."
+            ]
+        },
+        {
+            "tag": "passport_address_change",
+            "patterns": [
+                "How to change address in passport",
+                "Passport address update process",
+                "Documents for passport address change"
+            ],
+            "responses": [
+                "Address changes in a passport are done through a reissue application on the Passport Seva Portal."
+            ]
+        },
+        {
+            "tag": "driving_test_slot",
+            "patterns": [
+                "Book driving test slot",
+                "Driving test appointment reschedule",
+                "Driving test centre location",
+                "Driving license exam pattern"
+            ],
+            "responses": [
+                "Book or reschedule your driving test slot through the Parivahan Sewa portal (parivahan.gov.in)."
+            ]
+        },
+        {
+            "tag": "passport_appointment_reschedule",
+            "patterns": [
+                "Reschedule passport appointment",
+                "Passport appointment slot not available",
+                "Cancel passport appointment",
+                "Change passport appointment date"
+            ],
+            "responses": [
+                "You can reschedule or cancel your passport appointment by logging into your account on the Passport Seva Portal."
+            ]
+        },
+        {
+            "tag": "bot_help",
+            "patterns": [
+                "What can you help me with",
+                "List all services you support",
+                "Help",
+                "What questions can I ask",
+                "Show me what you can do"
+            ],
+            "responses": [
+                "I can help with things like passports, Aadhaar/PAN/voter ID, certificates, bill payments, civic complaints, emergency numbers, schemes, and more — just ask naturally!"
+            ]
+        }
+    ]
+}
